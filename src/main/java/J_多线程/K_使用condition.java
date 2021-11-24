@@ -15,7 +15,7 @@ Condition对象必须从Lock对象获取。
  */
 public class K_使用condition {
     public static void main(String[] args) {
-        List<Thread> ts = new ArrayList<>();
+        List<Thread> ts = new ArrayList<Thread>();
         K_TaskQueue taskQueue = new K_TaskQueue();
 
         for (int i =0; i < 5; i++) {

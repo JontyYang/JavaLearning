@@ -14,7 +14,7 @@ Java提供了标准的迭代器模型，即集合类实现java.util.Iterable接�
 public class J_Iterator {
     public static void main(String[] args) {
         //Java的集合类都可以使用for each循环，List、Set和Queue会迭代每个元素，Map默认会迭代每个key。
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<String, String>();
         map.put("1", "Jon");
         for (String str : map.values()) {
             System.out.println(str);

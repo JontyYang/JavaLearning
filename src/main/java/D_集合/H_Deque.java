@@ -2,7 +2,6 @@ package D_集合;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /*
 Queue是队列，只能一头进，另一头出。
@@ -31,7 +30,7 @@ public class H_Deque {
         总是用特定的接口来引用它，这是因为持有接口说明代码的抽象层次更高，而且接口本身定义的方法代表了特定的用途。
          */
         // 不推荐的写法:
-        LinkedList<String> d1 = new LinkedList<>();
+        LinkedList<String> d1 = new LinkedList<String>();
         d1.offerLast("z");
         // 推荐的写法：
         Deque<String> d2 = new LinkedList<>();

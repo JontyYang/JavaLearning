@@ -2,7 +2,6 @@ package D_集合;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
 
 /*
 栈（Stack）是一种后进先出（LIFO：Last In First Out）的数据结构。
@@ -25,7 +24,7 @@ public class I_stack {
         在Java中，我们用Deque可以实现Stack的功能，注意只调用push()/pop()/peek()方法，避免调用Deque的其他方法。
         最后，不要使用遗留类Stack。
          */
-        Deque<String> stack = new ArrayDeque<>();
+        Deque<String> stack = new ArrayDeque<String>();
         stack.push("jonty");
         System.out.println(stack.pop());
     }

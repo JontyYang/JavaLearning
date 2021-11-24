@@ -1,6 +1,9 @@
 package J_多线程;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /*
 在Java程序中，synchronized解决了多线程之间竞争的问题，例如，多个线程对同一共享变量的写操作。
@@ -24,7 +27,7 @@ wait和notify用于多线程协调运行：
 public class I_使用wait和notify {
     public static void main(String[] args) throws InterruptedException {
         I_TaskQueue2 taskQueue2 = new I_TaskQueue2();
-        List<Thread> ts = new ArrayList<>();
+        List<Thread> ts = new ArrayList<Thread>();
         for (int i =0; i < 5; i++) {
             Thread thread = new Thread() {
                 public void run() {
@@ -83,7 +86,7 @@ public class I_使用wait和notify {
 因此执行上述代码，线程会因为while循环百分百占用cpu
  */
 class I_TaskQueue1 {
-    Queue<String> queue = new LinkedList<>();
+    Queue<String> queue = new LinkedList<String>();
 
     public synchronized void addTask(String s) {
         this.queue.add(s);
@@ -103,7 +106,7 @@ class I_TaskQueue1 {
 对于上述TaskQueue，我们先改造getTask()方法，在条件不满足时，线程进入等待状态：
  */
 class I_TaskQueue2 {
-    Queue<String> queue = new LinkedList<>();
+    Queue<String> queue = new LinkedList<String>();
 
     public synchronized void addTask(String s) {
         this.queue.add(s);

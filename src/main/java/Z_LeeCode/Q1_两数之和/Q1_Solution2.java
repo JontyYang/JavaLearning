@@ -24,7 +24,7 @@ import java.util.Map;
 public class Q1_Solution2 {
     public static int[] twoSum(int[] nums, int target) {
         //使用hashMap进行索引、值的存储
-        Map<Integer, Integer> hashMap = new HashMap<>();
+        Map<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
             if (hashMap.containsKey(target - nums[i])) {
                 return new int[]{hashMap.get(target - nums[i]), i};

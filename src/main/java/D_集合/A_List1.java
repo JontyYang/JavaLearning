@@ -77,7 +77,7 @@ public class A_List1 {
             System.out.println(str);
         }
         //元素遍历
-        LinkedList<String> linkedList = new LinkedList<>();
+        LinkedList<String> linkedList = new LinkedList<String>();
         linkedList.add("jjj");
         for (String str1 : linkedList) {
             System.out.println(str1);

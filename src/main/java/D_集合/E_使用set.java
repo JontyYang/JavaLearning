@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class E_使用set {
     public static void main(String[] args) {
-        Set<String> set = new HashSet<>();
+        Set<String> set = new HashSet<String>();
         System.out.println(set.add("Jonty"));
         System.out.println(set.add("NiHao"));
         System.out.println(set.add("Jonty"));

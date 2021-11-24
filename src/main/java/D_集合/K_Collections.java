@@ -50,7 +50,7 @@ public class K_Collections {
     public static void main(String[] args) {
         //排序
         //Collections可以对List进行排序。因为排序会直接修改List元素的位置，因此必须传入可变List
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         list.add("apple");
         list.add("pear");
         list.add("orange");
@@ -61,7 +61,7 @@ public class K_Collections {
         System.out.println(list);
 
         //Collections提供了洗牌算法，即传入一个有序的List，可以随机打乱List内部元素的顺序，效果相当于让计算机洗牌：
-        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<Integer>();
         for (int i=0; i<10; i++) {
             list1.add(i);
         }

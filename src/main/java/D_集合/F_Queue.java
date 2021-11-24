@@ -22,7 +22,7 @@ public class F_Queue {
 
         //从上面的代码中，我们还可以发现，LinkedList即实现了List接口，又实现了Queue接口，
         // 但是，在使用的时候，如果我们把它当作List，就获取List的引用，如果我们把它当作Queue，就获取Queue的引用
-        List<String> list = new LinkedList<>();
+        List<String> list = new LinkedList<String>();
         Queue<String> queue = new LinkedList<>();
         System.out.println(queue.add("Jonty"));
         System.out.println(queue.size());

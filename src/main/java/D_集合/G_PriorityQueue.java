@@ -14,7 +14,7 @@ import java.util.Queue;
  */
 public class G_PriorityQueue {
     public static void main(String[] args) {
-        Queue<String> q = new PriorityQueue<>();
+        Queue<String> q = new PriorityQueue<String>();
         // 添加3个元素到队列:
         q.offer("apple");
         q.offer("pear");
@@ -31,7 +31,7 @@ public class G_PriorityQueue {
          */
 
         //通过Comparable接口来进行排序,相比Comparator推荐使用Comparable接口
-        Queue<User> q1 = new PriorityQueue<>();
+        Queue<User> q1 = new PriorityQueue<User>();
         // 添加3个元素到队列:
         q1.offer(new User("Bob", "A2"));
         q1.offer(new User("Alice", "A10"));

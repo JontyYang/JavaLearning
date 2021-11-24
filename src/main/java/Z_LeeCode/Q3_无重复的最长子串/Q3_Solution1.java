@@ -34,7 +34,7 @@ public class Q3_Solution1 {
     public int lengthOfLongestSubstring(String s) {
         int maxLength = 0;  //无重复最长子串长度
         int right = 0; //滑动窗口的右指针
-        Set<Character> hashSet = new HashSet<>();    //用来存储无重复的子串
+        Set<Character> hashSet = new HashSet<Character>();    //用来存储无重复的子串
 
         //对字符串进行遍历
         for (int i = 0; i < s.length(); i++) {
