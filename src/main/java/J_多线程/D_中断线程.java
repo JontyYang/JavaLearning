@@ -106,7 +106,7 @@ class D_MyThread3 extends Thread {
                                               Main Memory
                                     │                               │
                            ┌───────┐┌───────┐┌───────┐
-                           │  │ var A   ││    var B    ││     var C   │
+                           │  │ var A   ││    var B_TCP编程_Client    ││     var C   │
                            └───────┘└───────┘└───────┘
                            │      │ ▲                          │ ▲     │
                            ─ ─ ─│─│─ ─ ─ ─ ─ ─--- ─ ─│─│─ ─ ─
