@@ -50,7 +50,6 @@ public class A_List1 {
          * 内存占用	            少	            较大
          */
         //通常情况下，总是优先使用ArrayList
-
         ArrayList<String> arrayList1 = new ArrayList<String>();
         arrayList1.add("apple");
         arrayList1.add("apple");

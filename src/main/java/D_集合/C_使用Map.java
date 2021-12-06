@@ -21,6 +21,7 @@ public class C_使用Map {
          * Map这种键值（映射表）的数据结构，作用就是能高效通过key快速查找value
          */
         Student student = new Student("Jonty", 100);
+        System.out.println(student);
         Map<String, Student> map = new HashMap<String, Student>();
         //添加元素
         map.put("Jonty", student);
