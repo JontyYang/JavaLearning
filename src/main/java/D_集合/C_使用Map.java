@@ -68,7 +68,7 @@ public class C_使用Map {
     }
 }
 
- class Student {
+class Student {
     private String name;
     public int Score;
 
