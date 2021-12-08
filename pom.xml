@@ -45,12 +45,21 @@
             <scope>test</scope>
         </dependency>
 
-
+        <!--commons+log4J日志配置-->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.2</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
+
+        <!--SLF4J+logback日志配置,下载logback会自动加载SLF4J-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
